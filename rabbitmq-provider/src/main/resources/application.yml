@@ -1,0 +1,19 @@
+server:
+  port: 8021
+spring:
+  # 应用名称
+  application:
+    name: rabbitmq-provider
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #确认消息已发送到队列(Queue)
+    publisher-returns: true
+
+    #虚拟host 可以不设置,使用server默认host
+#    virtual-host: JCcccHost
+
+
