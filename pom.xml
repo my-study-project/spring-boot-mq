@@ -13,6 +13,8 @@
     <modules>
         <module>rabbitmq-consumer</module>
         <module>rabbitmq-provider</module>
+        <module>rocketmq-consumer</module>
+        <module>rocketmq-provider</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
