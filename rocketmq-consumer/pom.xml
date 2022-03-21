@@ -2,22 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>rabbitmq-consumer</artifactId>
+    <artifactId>rocketmq-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rabbitmq-consumer</name>
+    <name>rocketmq-consumer</name>
+    <description>rocketmq-consumer</description>
     <parent>
         <groupId>com.js</groupId>
         <artifactId>spring-boot-mq</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <dependencies>
-        <!--rabbitmq-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-    </dependencies>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
