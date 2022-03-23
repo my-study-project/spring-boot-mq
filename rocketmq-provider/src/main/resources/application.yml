@@ -5,6 +5,15 @@ rocketmq:
   name-server: 127.0.0.1:9876
   producer:
     group: my-producer-group
+    #目的地（topic:tag）
+    #topic
+    topic: anran-topic
+    #sync tag(同步消息tag)
+    sync-tag: anran-sync-tags
+    #async tag(异步消息tag)
+    async-tag: anran-async-tags
+    #oneway tag(单向消息tag)
+    oneway-tag: anran-oneway-tags
 
 spring:
   application:
