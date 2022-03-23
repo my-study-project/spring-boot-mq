@@ -2,7 +2,7 @@ server:
   port: 8082
 
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: 10.238.248.14:9876
   producer:
     group: my-producer-group
     #目的地（topic:tag）
