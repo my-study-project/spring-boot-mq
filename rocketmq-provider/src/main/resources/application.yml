@@ -2,8 +2,9 @@ server:
   port: 8082
 
 rocketmq:
-  name-server: 10.238.248.14:9876
+  name-server: 127.0.0.1:9876
   producer:
+    #生产者组
     group: my-producer-group
     #目的地（topic:tag）
     #topic
@@ -14,6 +15,7 @@ rocketmq:
     async-tag: anran-async-tags
     #oneway tag(单向消息tag)
     oneway-tag: anran-oneway-tags
+    instanceName: ${spring.application.name}
 
 spring:
   application:
